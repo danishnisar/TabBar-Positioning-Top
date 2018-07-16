@@ -12,6 +12,7 @@
 		72A61F1D20FCCA2800F146C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A61F1B20FCCA2800F146C5 /* Main.storyboard */; };
 		72A61F1F20FCCA2D00F146C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A61F1E20FCCA2D00F146C5 /* Assets.xcassets */; };
 		72A61F2220FCCA2D00F146C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A61F2020FCCA2D00F146C5 /* LaunchScreen.storyboard */; };
+		72A61F2A20FCCD5900F146C5 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A61F2920FCCD5900F146C5 /* TabViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		72A61F1E20FCCA2D00F146C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72A61F2120FCCA2D00F146C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72A61F2320FCCA2D00F146C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72A61F2920FCCD5900F146C5 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				72A61F1E20FCCA2D00F146C5 /* Assets.xcassets */,
 				72A61F2020FCCA2D00F146C5 /* LaunchScreen.storyboard */,
 				72A61F2320FCCA2D00F146C5 /* Info.plist */,
+				72A61F2920FCCD5900F146C5 /* TabViewController.swift */,
 			);
 			path = "TabBar Positioning Top";
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72A61F2A20FCCD5900F146C5 /* TabViewController.swift in Sources */,
 				72A61F1A20FCCA2800F146C5 /* ViewController.swift in Sources */,
 				72A61F1820FCCA2800F146C5 /* AppDelegate.swift in Sources */,
 			);
