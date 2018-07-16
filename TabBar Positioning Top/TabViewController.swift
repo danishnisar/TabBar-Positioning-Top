@@ -8,11 +8,11 @@
 
 import UIKit
 
-class TabViewController: UITabBarController {
+class TabViewController: UITabBarController,UITabBarControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        swipinit()
         // Do any additional setup after loading the view.
     }
 
@@ -26,6 +26,28 @@ class TabViewController: UITabBarController {
         self.tabBar.frame = tabbar
         
     }
+    func swipinit(){
+        let left = UISwipeGestureRecognizer(target: self, action: #selector(handleswip(_:)))
+        let right = UISwipeGestureRecognizer(target: self, action: #selector(handleswip(_:)))
+        
+        left.direction = .left
+        right.direction = .right
+        self.view.addGestureRecognizer(right)
+        self.view.addGestureRecognizer(left)
+    }
+    @objc func handleswip(_ sender:UISwipeGestureRecognizer){
+        if sender.direction == .left {
+            print("left")
+            tabBarController?.selectedIndex = 1
+        }
+        if sender.direction == .right {
+            tabBarController?.selectedIndex = 0
+            print("Right")
+        }
+    }
+    
+ 
+    
     
 
 
