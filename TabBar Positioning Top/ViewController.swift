@@ -8,17 +8,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,TabbarSwitcher {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        initSwipe(direction: .left)
         print("Initial Commit")
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func handleSwipe(_ sendr: UISwipeGestureRecognizer) {
+        if sendr.direction == .left {
+            tabBarController?.selectedIndex = 1
+        }
+        
     }
 
 
